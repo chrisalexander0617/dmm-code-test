@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DDM Interview Test</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <main class="flex items-center justify-center">
+        <div class="profile-card bg-white p-10 pb-500 text-center rounded-lg shadow-xl animate__animated animate__fadeInUp">
+            <img class="profile-image rounded-full" src="assets/profile-image.png" alt="">
+            <h1 class="text-gray-500 font-bold text-xl">Marcus Doe</h1>
+            <p class="text-gray-400">Developer</p>
+            <div class="buttons-wrapper my-5 grid grid-cols-2 gap-3">
+                <button id="follow-button" class="bg-green-300 px-4 py-2 rounded animate__animated animate__fadeIn text-white">Follow</button>
+                <button id="message-button" class="bg-red-400 px-4 py-2 rounded animate__animated animate__fadeIn text-white">Message</button>
+            </div>
+            <p class="follow-message-text text-gray-500 font-bold"></p>
+            <ul class="text- my-7">
+                <li class="flex my-4 options-list-item py-2">
+                    <div class="mr-3"><img class="profile-icon" src="./assets/icons/home.svg" alt="overview"></div>
+                    <div class="text-gray-400">Overview</div>
+                </li>
+                <li class="flex my-4 options-list-item py-2">
+                    <div class="mr-3"><img class="profile-icon" src="./assets/icons/user.svg" alt="overview"></div>
+                    <div class="text-gray-400">Account Settings</div>
+                </li>
+                <li class="flex my-4 options-list-item py-2">
+                    <div class="mr-3"><img class="profile-icon" src="./assets/icons/check-circle.svg" alt="overview"></div>
+                    <div class="text-gray-400">Tasks</div>
+                </li>
+                <li class="flex my-4 options-list-item py-2">
+                    <div class="mr-3"><img class="profile-icon" src="./assets/icons/flag.svg" alt="overview"></div>
+                    <div class="text-gray-400">Help</div>
+                </li>
+                
+            </ul>
+        </div>
+        <div class="overlay close"></div>
+        <div class="modal-wrapper animate__animated close bg-white p-10 rounded text-center animate__faster"">
+            <div class="modal-content">
+                <div id="modal-close-button">close</div>
+                <h1 class="text-xl font-bold text-gray-700 modal-message"></h1>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
