@@ -12,7 +12,6 @@ const modalMessage = document.querySelector('.modal-message');
 const followMessageText = document.querySelector('.follow-message-text');
 
 
-
 followButton.addEventListener('click', () => showFollowMessageText('You are now following Marcus Doe!'));
 messageButton.addEventListener('click', () => openModal('This feature is not implemented yet!'));
 
