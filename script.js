@@ -20,7 +20,6 @@ modalCloseButton.addEventListener('click',  () => {
     modalWrapper.classList.add('close')
 });
 
-
 function showFollowMessageText(message){
     followMessageText.innerHTML = message;
     setTimeout(()=> {
